@@ -1,0 +1,25 @@
+{
+  "name": "blockchain-introduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "node_1": "nodemon networknode.js 3001 http://localhost:3001",
+    "node_2": "nodemon networknode.js 3002 http://localhost:3002",
+    "node_3": "nodemon networknode.js 3003 http://localhost:3003",
+    "node_4": "nodemon networknode.js 3004 http://localhost:3004",
+    "node_5": "nodemon networknode.js 3005 http://localhost:3005",
+    "dev": "concurrently \"npm run node_1\" \"npm run node_2\" \"npm run node_3\" \"npm run node_4\" \"npm run node_5\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "uuid": "^8.3.2"
+  }
+}
